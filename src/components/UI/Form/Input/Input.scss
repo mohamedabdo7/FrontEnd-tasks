@@ -1,0 +1,57 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .icon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: 3%;
+    top: 19%;
+    cursor: pointer;
+  }
+  .error {
+    text-align: start;
+    font-size: var(--font-size-4);
+    padding: 0.5rem 0;
+    color: var(--color-danger);
+    height: 2.4rem;
+  }
+}
+
+.disabled {
+  background-color: aliceblue;
+}
+
+input.num-left {
+  text-align: left !important;
+  font-size: var(--font-size-2);
+  &::placeholder {
+    text-align: start !important;
+  }
+}
+
+input::-webkit-credentials-auto-fill-button {
+  //visibility: hidden;
+  opacity: 0;
+}
+
+input.placeholder-right::-webkit-input-placeholder {
+  text-align: start !important;
+}
+input.placeholder-center::-webkit-input-placeholder {
+  text-align: center !important;
+}
+
+input.padding-left {
+  padding-left: 3rem !important;
+}
+
+[dir='ltr'] {
+  .input-container {
+    .icon {
+      right: 3%;
+      left: unset;
+    }
+  }
+}

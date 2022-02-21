@@ -1,0 +1,29 @@
+.btn-container {
+  margin-top: 2rem;
+  .warning {
+    color: var(--color-danger-light-2);
+    background: var(--color-danger-light-1);
+  }
+  .back {
+    // color: var(--color-white);
+    color: red;
+    background: var(--color-grey-light-4);
+  }
+  .hold {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  .newRegister {
+    color: #0090ff;
+    background-color: #fff;
+    border-color: #6c757d;
+    box-shadow: 0px 4px 8px #0090ff3d;
+    width: 24rem;
+  }
+  .switch {
+    color: var(--color-main);
+    background-color: var(--color-main-light);
+    border-color: #6c757d;
+  }
+}
